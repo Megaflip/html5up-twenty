@@ -73,7 +73,6 @@ input, select, textarea {
 }
 
 /* Basic */
-
 	html {
 		box-sizing: border-box;
 	}
@@ -150,6 +149,7 @@ input, select, textarea {
 	h3 {
 		font-size: 1.15em;
 		letter-spacing: 0.025em;
+		font-weight: bold;
 	}
 
 	sub {
@@ -249,10 +249,10 @@ input, select, textarea {
 		}
 
 /* Row */
-
+/* Changed to way to directors names wrapped */
 	.row {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
@@ -1874,7 +1874,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 		}
-
+/* Changed director image */
 			.image.featured img {
 				display: block;
 				width: 100%;
@@ -1899,9 +1899,10 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
-
+/* change the weight and color of all icons*/
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: 800;
+			font-size: 40px;
 		}
 
 		.icon:before {
@@ -2302,7 +2303,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: transparent; /* made nav header on pages transparent*/
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
@@ -2325,6 +2326,9 @@ input, select, textarea {
 			}
 
 		#header nav {
+			display: flex;
+			list-style: none;
+			color:white; /* changed nav links to white on index page*/
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
@@ -2354,6 +2358,9 @@ input, select, textarea {
 						line-height: 1em;
 						padding: 0.6em 0.75em;
 						text-decoration: none;
+					}
+					nav #navpages {
+						color: black;
 					}
 
 					#header nav ul li input[type="button"],
@@ -2398,7 +2405,53 @@ input, select, textarea {
 
 					#header nav ul li.current > a {
 						font-weight: 900;
+						color:white; /* changed color of HOME link on NAV*/
+						}
+
+					#header nav ul li .submenu a {
+					color:white; /* changed nav links to white on about page*/
 					}
+
+/* About Page */
+
+#header nav ul li.currentpages > a {
+	font-weight: 900;
+	color:#605864; /* changed color of HOME link on NAV*/
+	}
+
+	#header nav ul li.submenupages > a {
+		color:#605864; /* changed nav links to gray on all pages*/
+	}
+
+	#header h1 {
+		font-weight: 900;
+		margin: 0;
+		color:#605864; /* changed H1 (Spectrum Orchestra on top left) links to gray on all pages*/
+	}
+
+/* Board of Directors Page */
+#header nav ul li.currentpages > a {
+	font-weight: 900;
+	color:#605864; /* changed color of HOME link on NAV*/
+	}
+
+/* Donate Page */
+#header nav ul li.currentpages > a {
+	font-weight: 900;
+	color:#605864; /* changed color of HOME link on NAV*/
+}
+
+	.rowsupport {
+		display: flex;
+	}
+
+/* Music-director Page */
+.ehdirector a {
+	float:left;
+}
+
+/* End pages */
+
 
 		#header.reveal {
 			-moz-animation: reveal-header 0.5s;
@@ -2418,6 +2471,8 @@ input, select, textarea {
 			padding: 2em 2.5em;
 			position: absolute;
 		}
+
+
 
 			#header.alt nav {
 				right: 2.5em;
@@ -2527,11 +2582,11 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
+		background-color: #605864;
 		background-image: url("images/12132024-perserverance-2.png"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-size: cover;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
