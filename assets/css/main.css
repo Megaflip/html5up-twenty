@@ -1717,7 +1717,7 @@ input, select, textarea {
 		}
 
 /* Section/Article */
-
+/* changes index page concerts, listen, become a supporter row */
 	section.special, article.special {
 		text-align: center;
 	}
@@ -1874,6 +1874,8 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 		}
+
+
 /* Changed director image */
 			.image.featured img {
 				display: block;
@@ -2319,6 +2321,7 @@ input, select, textarea {
 		#header h1 {
 			font-weight: 900;
 			margin: 0;
+			color: white;
 		}
 
 			#header h1 span {
@@ -2435,6 +2438,25 @@ input, select, textarea {
 	color:#605864; /* changed color of HOME link on NAV*/
 	}
 
+.board-directors-squares {
+	background-color: white;
+	padding-top: 20px;
+    padding-bottom: 5px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	
+}
+
+.wrapper.style1.container.special2 {
+	background-color: #83d3c9;
+	text-align: center;
+    background-image: url(images/light-bl.svg), url(images/light-br.svg);
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25em, 25em;
+    color: #fff;
+}
 /* Donate Page */
 #header nav ul li.currentpages > a {
 	font-weight: 900;
